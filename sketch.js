@@ -8,6 +8,7 @@ var stand1, stand2;
 var box1, box2, box3, box4, box5, box6, box7, box8, box9;
 var polygon, polygonImg;
 var slingshot;
+var score = 0;
 
 function preload() {
     polygonImg = loadImage("hexagon.png");
@@ -72,6 +73,25 @@ function draw(){
     box14.display();
     box15.display();
     box16.display();
+
+    box1.score();
+    box2.score();
+    box3.score();
+    box4.score();
+    box5.score();
+    box6.score();
+    box7.score();
+    box8.score();
+    box9.score();
+    box10.score();
+    box11.score();
+    box12.score();
+    box13.score();
+    box14.score();
+    box15.score();
+    box16.score();
+
+    text("Score: " + score, 700,40);
 
     imageMode(CENTER);
     image(polygonImg, polygon.position.x, polygon.position.y, 40, 40);

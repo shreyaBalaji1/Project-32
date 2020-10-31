@@ -19,7 +19,7 @@ class Box {
 
     //console.log(this.body.speed);
 
-     if(this.body.speed<4) {
+     if(this.body.speed<5) {
       var pos =this.body.position;
       var angle = this.body.angle;
       push();
@@ -39,5 +39,11 @@ class Box {
       //to remove the boxes
     }
   }
+
+    score() {
+    //var score = 0;
+    if(this.visibility<0 && this.visibility >- 105) {
+      score++;
+    }
+  }
 }
-  
